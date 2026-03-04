@@ -1,0 +1,458 @@
+/* ========================================
+   TESTIMONIALS PAGE
+======================================== */
+.testimonials-page {
+    padding: 2rem 0 4rem;
+}
+
+/* ========================================
+   TESTIMONIALS GRID
+======================================== */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.testimonial-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body.dark-mode .testimonial-card {
+    background: linear-gradient(145deg, rgba(55, 71, 133, 0.7), rgba(36, 48, 94, 0.9));
+    border-color: rgba(168, 208, 230, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(247, 108, 108, 0.3);
+}
+
+body.dark-mode .testimonial-card:hover {
+    border-color: rgba(247, 108, 108, 0.4);
+    box-shadow: 0 20px 50px rgba(247, 108, 108, 0.15), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* New badge for dynamic submissions */
+.testimonial-card.new-testimonial {
+    border-color: rgba(247, 108, 108, 0.4);
+}
+
+body.dark-mode .testimonial-card.new-testimonial {
+    border-color: rgba(247, 108, 108, 0.5);
+}
+
+.new-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--coral);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.testimonial-quote {
+    font-size: 3rem;
+    color: var(--coral);
+    line-height: 1;
+    opacity: 0.6;
+    font-family: Georgia, serif;
+}
+
+body.dark-mode .testimonial-quote {
+    opacity: 0.8;
+}
+
+.testimonial-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    flex: 1;
+}
+
+body.dark-mode .testimonial-text {
+    color: var(--light-blue);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+body.dark-mode .testimonial-author {
+    border-top-color: rgba(168, 208, 230, 0.15);
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--indigo), var(--coral));
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+}
+
+.author-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.author-role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.testimonial-stars {
+    color: var(--yellow);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    filter: drop-shadow(0 0 2px rgba(248, 233, 161, 0.5));
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+/* ========================================
+   TESTIMONIAL FORM SECTION
+======================================== */
+.testimonial-form-section {
+    background: var(--bg-secondary);
+    border-radius: 24px;
+    padding: 3rem;
+    margin-top: 3rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .testimonial-form-section {
+    background: linear-gradient(145deg, rgba(55, 71, 133, 0.7), rgba(36, 48, 94, 0.9));
+    border-color: rgba(168, 208, 230, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.form-header-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-form-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-form-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.testimonial-form {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.required {
+    color: var(--coral);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: rgba(36, 48, 94, 0.6);
+    border-color: rgba(168, 208, 230, 0.2);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 4px rgba(247, 108, 108, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ef4444;
+}
+
+.error-message {
+    display: block;
+    font-size: 0.8rem;
+    color: #ef4444;
+    margin-top: 0.25rem;
+    min-height: 1rem;
+}
+
+/* Character Count */
+.char-count {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: right;
+    margin-top: 0.25rem;
+}
+
+.char-count.near-limit {
+    color: var(--coral);
+    font-weight: 600;
+}
+
+/* ========================================
+   STAR RATING INPUT
+======================================== */
+.star-rating {
+    display: flex;
+    gap: 0.35rem;
+    padding: 0.75rem 0;
+}
+
+.star {
+    font-size: 2rem;
+    color: var(--border-color);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    line-height: 1;
+    user-select: none;
+}
+
+body.dark-mode .star {
+    color: rgba(248, 233, 161, 0.6);
+}
+
+.star:hover,
+.star.active {
+    color: var(--yellow);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 0, 255));
+    transform: scale(1.15);
+}
+
+/* ========================================
+   CONSENT CHECKBOX
+======================================== */
+.consent-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin-top: 2px;
+    accent-color: var(--coral);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ========================================
+   FORM SUCCESS & ERROR STATES
+======================================== */
+.form-success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: var(--bg-primary);
+    border-radius: 16px;
+    margin: 1.5rem auto 0;
+    max-width: 750px;
+    animation: fadeIn 0.4s ease;
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.1);
+}
+
+body.dark-mode .form-success {
+    background: rgba(36, 48, 94, 0.8);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.form-success.show {
+    display: flex;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.form-success h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.form-success p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.form-error-alert {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.error-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.form-error-alert p {
+    color: #ef4444;
+    font-size: 0.875rem;
+}
+
+/* ========================================
+   SUBMIT BUTTON LOADING STATE
+======================================== */
+#submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* ========================================
+   TESTIMONIAL PREVIEW (index.html)
+======================================== */
+.testimonials-preview {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+}
+
+body.dark-mode .testimonials-preview {
+    background: rgba(36, 48, 94, 0.5);
+}
+
+.testimonials-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .testimonials-grid,
+    .testimonials-preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-form-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-grid,
+    .testimonials-preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-form-header h2 {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Testimonials - What people say about Samantha Balon">
+  <title>Testimonials | Samantha Balon</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/logo-pattern.css">
+  <link rel="stylesheet" href="css/testimonial.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Samantha Balon</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="testimonials.html" class="nav-link active">Testimonials</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Testimonials Page Content -->
+<main class="page-content">
+  <section class="testimonials-page">
+    <div class="container">
+      <h1 class="page-title">Testimonials</h1>
+      <p class="page-subtitle">Kind words from classmates, teammates, and instructors I've had the pleasure of working with.</p>
+      <div class="section-line"></div>
+
+      <!-- Single unified grid — all cards rendered by JS -->
+      <div class="testimonials-grid" id="testimonials-grid"></div>
+
+      <!-- Leave a Testimonial Section -->
+      <div class="testimonial-form-section" id="leave-testimonial">
+        <div class="testimonial-form-header">
+          <div class="form-header-icon">✍️</div>
+          <h2>Leave a Testimonial</h2>
+          <p>Worked or studied with me? I'd love to hear your thoughts!</p>
+        </div>
+
+        <form class="testimonial-form" id="testimonial-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="t-name">Your Full Name <span class="required">*</span></label>
+              <input type="text" id="t-name" name="from_name" placeholder="e.g. Juan Dela Cruz" required>
+              <span class="error-message" id="t-name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="t-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="t-email" name="from_email" placeholder="juan@example.com" required>
+              <span class="error-message" id="t-email-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="t-role">Your Role / Relationship <span class="required">*</span></label>
+              <input type="text" id="t-role" name="from_role" placeholder="e.g. Classmate, Instructor, Groupmate" required>
+              <span class="error-message" id="t-role-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="t-rating">Rating <span class="required">*</span></label>
+              <div class="star-rating" id="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+              <input type="hidden" id="t-rating" name="rating" value="">
+              <span class="error-message" id="t-rating-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="t-message">Your Testimonial <span class="required">*</span></label>
+            <textarea id="t-message" name="message" placeholder="Share your experience working or studying with me..." rows="5" required></textarea>
+            <span class="char-count" id="char-count">0 / 500 characters</span>
+            <span class="error-message" id="t-message-error"></span>
+          </div>
+
+          <div class="form-group consent-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="t-consent" name="consent">
+              <span class="checkmark"></span> I agree that my testimonial may be displayed publicly on this portfolio.
+            </label>
+            <span class="error-message" id="t-consent-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span class="btn-text">✉️ Submit Testimonial</span>
+            <span class="btn-loading" style="display:none;">⏳ Sending...</span>
+          </button>
+        </form>
+
+        <!-- Success Message — OUTSIDE the form so it always renders properly -->
+        <div class="form-success" id="form-success">
+          <div class="success-icon">🎉</div>
+          <h3>Thank you for your kind words!</h3>
+          <p>Your testimonial has been submitted successfully and sent to Samantha's email.</p>
+        </div>
+
+        <!-- Error Message — OUTSIDE the form -->
+        <div class="form-error-alert" id="form-error-alert" style="display:none;">
+          <div class="error-icon">⚠️</div>
+          <p>Something went wrong. Please try again or contact directly via email.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo" class="logo-img">
+          <span class="logo-text">Samantha Balon</span>
+        </a>
+        <p>IT Student passionate about creating beautiful digital experiences.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/sycl.r" target="_blank" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://github.com/Samsrepo-101" target="_blank" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com" target="_blank" aria-label="Email"><img src="images/gmail.png" alt="Email"></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>📧 samanthaclaire.balon@gmail.com</p>
+        <p>📍 Philippines</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Samantha Claire A. Balon. | Have a great day!</p>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
