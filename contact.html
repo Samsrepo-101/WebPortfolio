@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Me - Get in touch for collaborations and inquiries">
+  <title>Contact | Samantha Balon</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/logo-pattern.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Samantha Balon</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Page Content -->
+<main class="page-content">
+  <section class="contact-page">
+    <div class="container">
+      <h1 class="page-title">Get In Touch</h1>
+      <p class="page-subtitle">Have a question or want to work together? Feel free to reach out!</p>
+      <div class="section-line"></div>
+
+      <div class="contact-page-grid">
+        <div class="contact-info-section">
+          <!-- Contact Cards -->
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <img src="images/gmail.png" alt="Email">
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">Email</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com">samanthaclaire.balon@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-content">
+                <span class="contact-label">Location</span>
+                <span>JPCN, Region V, Philippines</span>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">📱</div>
+              <div class="contact-card-content">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+639614746328">+63 961 474 6328</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-section">
+            <h3>Connect with me</h3>
+            <div class="social-links-grid">
+              <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" class="social-link-card facebook">
+                <div class="social-icon">
+                  <img src="images/facebook.png" alt="Facebook">
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/sycl.r" target="_blank" class="social-link-card instagram">
+                <div class="social-icon">
+                  <img src="images/instagram.png" alt="Instagram">
+                </div>
+              </a>
+
+              <a href="https://github.com/Samsrepo-101" target="_blank" class="social-link-card github">
+                <div class="social-icon">
+                  <img src="images/github.png" alt="Github">
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" class="social-link-card linkedin">
+                <div class="social-icon">
+                  <img src="images/linkedin.png" alt="LinkedIn">
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Featured Social -->
+          <div class="featured-social">
+            <h3>Follow me on social media</h3>
+            <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" class="featured-social-link facebook">
+              <span class="featured-icon">
+                  <img src="images/facebook.png" alt="Facebook Logo">
+              </span>
+              <span class="featured-name">Facebook</span>
+            </a>
+
+            <a href="https://www.instagram.com/sycl.r" target="_blank" class="featured-social-link instagram">
+              <span class="featured-icon">
+                <img src="images/instagram.png" alt="Instagram Logo">
+              </span>
+              <span class="featured-name">Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <form class="contact-form" id="contact-form-page">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                <span class="error-message" id="contact-name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                <span class="error-message" id="contact-email-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+              <span class="error-message" id="subject-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+              <span class="error-message" id="contact-message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              ✉️ Send Message
+            </button>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon">✅</div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. I'll get back to you soon!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo" class="logo-img">
+          <span class="logo-text">Samantha Balon</span>
+        </a>
+        <p>IT Student passionate about creating beautiful digital experiences.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/sycl.r" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://github.com/Samsrepo-101" target="_blank" aria-label="GitHub">
+            <img src="images/github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com" target="_blank" aria-label="Email">
+            <img src="images/gmail.png" alt="Email">
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>📧 samanthaclaire.balon@gmail.com</p>
+        <p>📍 Philippines</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Samantha Claire A. Balon. | Have a great day!️</p>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

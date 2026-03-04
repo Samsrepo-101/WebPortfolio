@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of an IT Student - Web Developer">
+    <title>Home | Samantha Balon</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/logo-pattern.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">Samantha Balon</span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<header class="hero" id="home">
+    <div class="hero-bg-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Open to opportunities
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Samantha Claire A. Balon</span>
+            </h1>
+            <div class="typewriter-container">
+                <span id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-location">📍 Philippines</p>
+            <p class="hero-description">
+                An IT student based in the Philippines, passionate about creating practical,
+                user-friendly tech solutions and exploring new ideas as I grow in the world of technology.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View My Work
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    📧 Contact me
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <div class="image-ring"></div>
+                <div class="image-ring ring-2"></div>
+                <img src="images/profile.png">
+                <div class="floating-badge">
+                    <span>✨</span> IT Student
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+    </div>
+</header>
+
+<section class="about-preview" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon">🎓</div>
+                <div class="about-info">
+                    <h3>Education</h3>
+                    <p>BS Information Technology</p>
+                </div>
+                <p class="about-text">
+                    I'm currently pursuing my Bachelor's degree in Information Technology,
+                    where I've discovered my love for creating digital solutions.
+                </p>
+            </div>
+            <div class="about-interests">
+                <h3>Things I Love</h3>
+                <div class="interest-tags">
+                    <span class="tag"><span class="tag-icon">💻</span> Coding</span>
+                    <span class="tag"><span class="tag-icon">🎬</span> Editing</span>
+                    <span class="tag"><span class="tag-icon">🎮</span> Gaming</span>
+                    <span class="tag"><span class="tag-icon">☕</span> Coffee</span>
+                    <span class="tag"><span class="tag-icon">🎵</span> Music</span>
+                    <span class="tag"><span class="tag-icon">🎞️</span> Films</span>
+                    <span class="tag"><span class="tag-icon">🏃‍♀️</span> Running</span>
+                    <span class="tag"><span class="tag-icon">🏀</span> Sports</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills-preview" id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="section-line"></div>
+        <div class="skills-panel">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Figma</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">PHP</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <a href="skills.html" class="btn btn-primary" style="margin-top: 1rem;">View All Skills →</a>
+    </div>
+</section>
+
+<!-- Projects Preview Section -->
+<section class="projects-preview" id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+        <div class="projects-grid">
+            <article class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/barbershop.jpg" alt="Business Website">
+                </div>
+                <div class="project-content">
+                    <h3>Business Website</h3>
+                    <p>A barbershop website designed to provide customers with seamless appointment booking, a detailed overview of services, and profiles of the barbers within the establishment.</p>
+                    <div class="project-tags">
+                        <span>Website</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="app">
+                <div class="project-image">
+                    <img src="images/projects/half.png" alt="Lost and Found App">
+                </div>
+                <div class="project-content">
+                    <h3>Lost and Found App</h3>
+                    <p>A lost and found application for CNSC that allows students and staff to report lost items, submit found items, and quickly check if something has been recovered.</p>
+                    <div class="project-tags">
+                        <span>Application</span>
+                        <span>Java</span>
+                        <span>Android Studio</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="app">
+                <div class="project-image">
+                    <img src="images/projects/Budget.jpg" alt="Budget Management App">
+                </div>
+                <div class="project-content">
+                    <h3>Budget Management App</h3>
+                    <p>A budget management application that helps users track their expenses, and stay in control of their finances with easy-to-use tools.</p>
+                    <div class="project-tags">
+                        <span>Application</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <a href="projects.html" class="btn btn-primary" style="margin-top: 2rem;">View All Projects →</a>
+    </div>
+</section>
+
+<!-- Contact Preview Section -->
+<section class="contact-preview" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a question or want to work together? Feel free to reach out!</p>
+        <div class="section-line"></div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="social-cards">
+                    <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" class="social-card facebook">
+                        <div class="social-icon">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </div>
+                        <div class="social-details">
+                            <h4>Facebook</h4>
+                            <p>@Samantha Balon</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/sycl.r" target="_blank" class="social-card instagram">
+                        <div class="social-icon">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </div>
+                        <div class="social-details">
+                            <h4>Instagram</h4>
+                            <p>@sycl.r</p>
+                        </div>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com" target="_blank" class="social-card email">
+                    <div class="social-icon">
+                            <img src="images/gmail.png" alt="Email">
+                        </div>
+                        <div class="social-details">
+                            <h4>Email</h4>
+                            <p>samanthaclaire.balon@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" class="social-card LinkedIn">
+                        <div class="social-icon">
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                        </div>
+                        <div class="social-details">
+                            <h4>LinkedIn</h4>
+                            <p>Samantha Claire Balon</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Samsrepo-101" target="_blank" class="social-card LinkedIn">
+                        <div class="social-icon">
+                            <img src="images/github.png" alt="Github">
+                        </div>
+                        <div class="social-details">
+                            <h4>Github</h4>
+                            <p>Samsrepo</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Samantha Balon</span>
+                </a>
+                <p>IT Student passionate about creating beautiful digital experiences.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/sycl.r" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/Samsrepo-101" target="_blank" aria-label="GitHub">
+                        <img src="images/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" aria-label="LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com" target="_blank" aria-label="Email">
+                    <img src="images/gmail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p>📧 samanthaclaire.balon@gmail.com</p>
+                <p>📍 Philippines</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Samantha Balon. | Have a great day!  </p>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

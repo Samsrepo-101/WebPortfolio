@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Projects - Web Development Portfolio">
+  <title>Projects | Samantha Balon</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/logo-pattern.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Samantha Balon</span>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Projects Page Content -->
+<main class="page-content">
+  <section class="projects-page">
+    <div class="container">
+      <h1 class="page-title">My Projects</h1>
+      <p class="page-subtitle">A collection of projects I've worked on</p>
+      <div class="section-line"></div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="Group Project">Group Projects</button>
+        <button class="filter-btn" data-filter="Individual">Individual</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card" data-category="Group Project">
+          <div class="project-image">
+            <img src="images/projects/barbershop.jpg" alt="Business Website">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Business Website</h3>
+            <p>A barbershop website designed to provide customers with seamless appointment booking, a detailed overview of services, and profiles of the barbers within the establishment.</p>
+            <div class="project-tags">
+              <span>Website</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Group Project">
+          <div class="project-image">
+            <img src="images/projects/Budget.jpg" alt="Budget Management App">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Budget Management App</h3>
+            <p>A budget management application that helps users track their expenses, and stay in control of their finances with easy-to-use tools.</p>
+            <div class="project-tags">
+              <span>Application</span>
+              <span>Java</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Individual">
+          <div class="project-image">
+            <img src="images/projects/Portfolio.png" alt="Portfolio Website">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio with clean design and smooth animations.</p>
+            <div class="project-tags">
+              <span>Website</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a href="https://github.com/Samsrepo-101/WebPortfolio.git"
+               target="_blank"
+               class="btn btn-primary btn-small">
+              View Repository
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Group Project">
+          <div class="project-image">
+            <img src="images/projects/half.png" alt="Lost and Found App">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Lost and Found App</h3>
+            <p>A lost and found application for CNSC that allows students and staff to report lost items, submit found items, and quickly check if something has been recovered.</p>
+            <div class="project-tags">
+              <span>Application</span>
+              <span>Java</span>
+              <span>Android Studio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Individual">
+          <div class="project-image">
+            <img src="images/projects/ATC.png" alt="Air Traffic Control Simulator">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Air Traffic Control Simulator</h3>
+            <p>An Air Traffic simulator desinged in ASCII code layout.</p>
+            <div class="project-tags">
+              <span>Ascii</span>
+              <span>Java</span>
+            </div>
+
+            <a href="https://github.com/Samsrepo-101/ATC-SIMS.git"
+               target="_blank"
+               class="btn btn-primary btn-small">
+              View Repository
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="Individual">
+          <div class="project-image">
+            <img src="images/projects/File.png" alt="File Manager">
+            <div class="project-overlay">
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>File Manager</h3>
+            <p>A file manager app that helps users organize, store, and access their files easily in one place.</p>
+            <div class="project-tags">
+              <span>Application</span>
+              <span>Java</span>
+              <span>AWT</span>
+            </div>
+
+            <a href="https://github.com/Samsrepo-101/FileManager.git"
+               target="_blank"
+               class="btn btn-primary btn-small">
+              View Repository
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- More Coming Card -->
+      <div class="more-projects-card">
+        <div class="more-icon">📁</div>
+        <h3>More Projects Coming Soon</h3>
+        <p>Check back later or follow me on GitHub!</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo" class="logo-img">
+          <span class="logo-text">Samantha Balon</span>
+        </a>
+        <p>IT Student passionate about creating beautiful digital experiences.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/samantha.aguabalon" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/sycl.r" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://github.com/Samsrepo-101" target="_blank" aria-label="GitHub">
+            <img src="images/github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/samantha-claire-balon-8b34562a5/" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samanthaclaire.balon@gmail.com" target="_blank" aria-label="Email">
+            <img src="images/gmail.png" alt="Email">
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>📧 samanthaclaire.balon@gmail.com</p>
+        <p>📍 Philippines</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Samantha Claire A. Balon. | Have a great day!</p>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

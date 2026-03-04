@@ -1,0 +1,106 @@
+/* ========================================
+   BACKGROUND LOGO PATTERN
+   Add this to your base.css or as a new CSS file
+======================================== */
+
+/* Background pattern container */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url('../images/logo.png');
+    background-size: 150px 150px; /* Adjust size as needed */
+    background-repeat: repeat;
+    background-position: center;
+    opacity: 0.03; /* Very subtle - adjust between 0.02 and 0.05 */
+    animation: subtleFloat 60s ease-in-out infinite;
+}
+
+/* Dark mode adjustment - slightly more visible */
+body.dark-mode::before {
+    opacity: 0.04;
+    filter: brightness(1.7);
+}
+
+/* Optional: Gentle floating animation */
+@keyframes subtleFloat {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-10px) translateX(5px);
+    }
+    50% {
+        transform: translateY(-5px) translateX(-5px);
+    }
+    75% {
+        transform: translateY(10px) translateX(3px);
+    }
+}
+
+/* ========================================
+   ALTERNATIVE STYLES (Pick one)
+======================================== */
+
+
+/* OPTION 3: Gradient Fade Effect (fades at edges) */
+.gradient-fade body::before {
+    mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(0,0,0,0.05) 100%
+    );
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(0,0,0,0.05) 100%
+    );
+}
+
+/* Make sure these sections have position: relative */
+.hero,
+.about-preview,
+.projects-preview {
+    position: relative;
+}
+
+.hero > *,
+.about-preview > *,
+.projects-preview > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   CUSTOMIZATION TIPS
+======================================== */
+
+/*
+OPACITY RECOMMENDATIONS:
+- 0.02 - Very subtle, barely noticeable
+- 0.03 - Subtle (recommended starting point)
+- 0.04 - Noticeable but not distracting
+- 0.05 - More prominent
+- 0.08+ - Too bold for background
+
+BACKGROUND SIZE RECOMMENDATIONS:
+- 100px - Smaller, denser pattern
+- 150px - Medium (balanced)
+- 200px - Larger, more spaced out
+- 250px - Very spaced, minimal
+
+TO DISABLE ANIMATION:
+Remove or comment out the animation line:
+animation: subtleFloat 60s ease-in-out infinite;
+
+TO CHANGE SPACING:
+Use background-position to offset the pattern:
+background-position: 50px 50px;
+*/
